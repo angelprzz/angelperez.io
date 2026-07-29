@@ -1,5 +1,6 @@
 import { Moon } from "lucide-react";
 import ProjectCard from "@/components/project-card";
+import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -71,18 +72,12 @@ export default function Home() {
       {/* PROJECTS */}
       <h2 className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">Projects</h2>
 
-      {/* Card */}
-      <ProjectCard
-        title="Sedcst."
-        description="A social network for fashion models and industry professionals. I designed the product and developed the platform end to end."
-        tags={["UI", "UX", "Frontend", "Backend", "Desktop", "Mobile"]}
-        year={2025}
-        isActive
-        icon="/projects/sedcst/icon.svg"
-        cover="/projects/sedcst/cover.png"
-        coverStyle="bg-[#F9FAFB] px-3"
-        href="https://www.sedcst.com"
-      />
+      {/* Cards */}
+      <div className="space-y-8">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,17 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  tags: string[];
-  year: number;
-  isActive: boolean;
-  icon: string;
-  cover: string;
-  coverStyle?: string;
-  href: string;
-}
+import type { ProjectType } from "@/types/project";
 
 export default function ProjectCard({
   title,
@@ -23,7 +12,7 @@ export default function ProjectCard({
   cover,
   coverStyle,
   href,
-}: ProjectCardProps) {
+}: ProjectType) {
   return (
     <Link
       href={href}
