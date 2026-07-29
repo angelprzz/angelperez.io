@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Moon } from "lucide-react";
 
 export default function Home() {
@@ -75,8 +76,8 @@ export default function Home() {
         <div className="flex h-full w-1/2 flex-col justify-between p-10">
           <div className="space-y-5">
             <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-1">
-                <div className="h-8 w-8 shrink-0 bg-red-200" />
+              <div className="flex items-center gap-2">
+                <Image src="/projects/sedcst/icon.svg" alt="Sedcst logo" width={32} height={32} className="shrink-0" />
                 <h3 className="font-display text-3xl font-extrabold">Sedcst.</h3>
               </div>
               <p className="font-sans text-sm leading-relaxed tracking-widest">
@@ -104,7 +105,17 @@ export default function Home() {
             <span className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_4px_2px] shadow-green-500/50" />
           </span>
         </div>
-        <div className="w-1/2 bg-red-200" />
+        <div className="h-full w-1/2">
+          <div className="relative h-full w-full bg-red-200">
+            <Image
+              src="/projects/sedcst/cover.png"
+              alt="Sedcst Cover"
+              fill
+              sizes="360px"
+              className="object-contain px-3"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
