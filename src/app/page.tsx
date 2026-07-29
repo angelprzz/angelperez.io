@@ -5,13 +5,13 @@ export default function Home() {
     <div className="mx-auto w-180">
       <header className="mb-8 flex h-16 items-center justify-between">
         <div className="flex items-center gap-5">
-          <span className="font-display cursor-pointer text-base font-medium text-neutral-500 transition-colors hover:text-neutral-700">
+          <span className="font-display hover:text-foreground cursor-pointer text-base font-medium text-secondary transition-colors">
             About
           </span>
-          <span className="font-display cursor-pointer text-base font-medium text-neutral-500 transition-colors hover:text-neutral-700">
+          <span className="font-display hover:text-foreground cursor-pointer text-base font-medium text-secondary transition-colors">
             Projects
           </span>
-          <span className="font-display cursor-pointer text-base font-medium text-neutral-500 transition-colors hover:text-neutral-700">
+          <span className="font-display hover:text-foreground cursor-pointer text-base font-medium text-secondary transition-colors">
             Contact
           </span>
         </div>
@@ -20,7 +20,7 @@ export default function Home() {
             href="https://github.com/angelprzz"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-display text-base font-medium text-neutral-500 transition-colors hover:text-neutral-700"
+            className="font-display hover:text-foreground text-base font-medium text-secondary transition-colors"
           >
             GitHub
           </a>
@@ -28,25 +28,25 @@ export default function Home() {
             href="https://x.com/AngelTheMaker"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-display text-base font-medium text-neutral-500 transition-colors hover:text-neutral-700"
+            className="font-display hover:text-foreground text-base font-medium text-secondary transition-colors"
           >
             Twitter
           </a>
           <button
             type="button"
             aria-label="Toggle theme"
-            className="cursor-pointer text-neutral-500 transition-colors hover:text-neutral-700"
+            className="hover:text-foreground cursor-pointer text-secondary transition-colors"
           >
             <Moon size={16} />
           </button>
         </div>
       </header>
 
-      <h1 className="font-display text-[40px] font-extrabold text-neutral-700">Hey, I&apos;m Ángel :)</h1>
-      <h1 className="font-display text-[40px] font-semibold text-neutral-500">Software Engineer, Designer, Human</h1>
+      <h1 className="font-display text-[40px] font-extrabold">Hey, I&apos;m Ángel :)</h1>
+      <h1 className="font-display text-[40px] font-semibold text-secondary">Software Engineer, Designer, Human</h1>
 
       <div className="mt-5 flex gap-5">
-        <div className="space-y-4 font-sans text-base text-neutral-700">
+        <div className="space-y-4 font-sans text-base">
           <p>I love building digital products.</p>
           <p>
             I&apos;m a full-stack design engineer with 7 years of experience working across small startups and large
@@ -56,7 +56,7 @@ export default function Home() {
           <p>Outside of work I enjoy music, cinema and philosophy.</p>
           <p>
             If you&apos;re a founder or startup seeking innovative product development, let&apos;s talk.{" "}
-            <span className="cursor-pointer text-neutral-500 underline decoration-neutral-500 transition-colors hover:text-neutral-700 hover:decoration-neutral-700">
+            <span className="hover:text-foreground hover:decoration-foreground cursor-pointer text-secondary underline decoration-secondary transition-colors">
               Reach out via email
             </span>
             .
@@ -65,7 +65,7 @@ export default function Home() {
         <div className="h-53.5 w-45 shrink-0 bg-neutral-200" />
       </div>
 
-      <h2 className="font-display mt-8 text-[40px] font-extrabold text-neutral-700">Projects</h2>
+      <h2 className="font-display text-foreground mt-8 text-[40px] font-extrabold">Projects</h2>
     </div>
   );
 }
