@@ -71,7 +71,7 @@ export default function Home() {
       <h2 className="font-display text-foreground mt-8 text-[40px] font-extrabold">Projects</h2>
 
       {/* Card */}
-      <div className="mt-4 flex h-90 w-full cursor-pointer overflow-hidden rounded-2xl bg-neutral-100">
+      <div className="mt-4 flex h-90 w-full cursor-pointer overflow-hidden rounded-2xl bg-neutral-100 transition-transform duration-300 hover:scale-102">
         <div className="flex h-full w-1/2 flex-col justify-between p-10">
           <div className="space-y-5">
             <div className="flex flex-col gap-3">
