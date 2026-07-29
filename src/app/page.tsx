@@ -105,16 +105,14 @@ export default function Home() {
             <span className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_4px_2px] shadow-green-500/50" />
           </span>
         </div>
-        <div className="h-full w-1/2">
-          <div className="relative h-full w-full bg-red-200">
-            <Image
-              src="/projects/sedcst/cover.png"
-              alt="Sedcst Cover"
-              fill
-              sizes="360px"
-              className="object-contain px-3"
-            />
-          </div>
+        <div className="relative h-full w-1/2">
+          <Image
+            src="/projects/sedcst/cover.png"
+            alt="Sedcst Cover"
+            fill
+            sizes="360px"
+            className="h-full w-full bg-[#F9FAFB] object-contain px-3"
+          />
         </div>
       </div>
     </div>
