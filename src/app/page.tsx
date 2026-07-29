@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { Moon } from "lucide-react";
+import ProjectCard from "@/components/project-card";
 
 export default function Home() {
   return (
@@ -69,52 +69,20 @@ export default function Home() {
       </div>
 
       {/* PROJECTS */}
-      <h2 className="font-display text-foreground mt-8 text-[40px] font-extrabold">Projects</h2>
+      <h2 className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">Projects</h2>
 
       {/* Card */}
-      <div className="mt-4 flex h-90 w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 shadow-md transition-transform duration-300 hover:scale-102">
-        <div className="flex h-full w-1/2 flex-col justify-between p-10">
-          <div className="space-y-5">
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-2">
-                <Image src="/projects/sedcst/icon.svg" alt="Sedcst logo" width={32} height={32} className="shrink-0" />
-                <h3 className="font-display text-3xl font-extrabold">Sedcst.</h3>
-              </div>
-              <p className="font-sans text-sm leading-relaxed tracking-widest">
-                A social network for fashion models and industry professionals. I designed the product and developed the
-                platform end to end.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-x-2 gap-y-3">
-              <span className="inline-block rounded-full bg-white px-3 py-1 font-sans text-sm font-normal">UI</span>
-              <span className="inline-block rounded-full bg-white px-3 py-1 font-sans text-sm font-normal">UX</span>
-              <span className="inline-block rounded-full bg-white px-3 py-1 font-sans text-sm font-normal">
-                Frontend
-              </span>
-              <span className="inline-block rounded-full bg-white px-3 py-1 font-sans text-sm font-normal">
-                Backend
-              </span>
-              <span className="inline-block rounded-full bg-white px-3 py-1 font-sans text-sm font-normal">
-                Desktop
-              </span>
-              <span className="inline-block rounded-full bg-white px-3 py-1 font-sans text-sm font-normal">Mobile</span>
-            </div>
-          </div>
-          <span className="flex items-center gap-1.5 font-sans text-sm font-medium text-[#808080]">
-            2025 • <span className="text-green-500 drop-shadow-[0_0_6px_rgba(34,197,94,0.9)]">Active</span>
-            <span className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_4px_2px] shadow-green-500/50" />
-          </span>
-        </div>
-        <div className="relative h-full w-1/2">
-          <Image
-            src="/projects/sedcst/cover.png"
-            alt="Sedcst Cover"
-            fill
-            sizes="360px"
-            className="h-full w-full bg-[#F9FAFB] object-contain px-3"
-          />
-        </div>
-      </div>
+      <ProjectCard
+        title="Sedcst."
+        description="A social network for fashion models and industry professionals. I designed the product and developed the platform end to end."
+        tags={["UI", "UX", "Frontend", "Backend", "Desktop", "Mobile"]}
+        year={2025}
+        isActive
+        icon="/projects/sedcst/icon.svg"
+        cover="/projects/sedcst/cover.png"
+        coverStyle="bg-[#F9FAFB] px-3"
+        href="https://www.sedcst.com"
+      />
     </div>
   );
 }
