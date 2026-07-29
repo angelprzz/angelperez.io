@@ -56,7 +56,7 @@ export default function Home() {
           <p>Outside of work I enjoy music, cinema and philosophy.</p>
           <p>
             If you&apos;re a founder or startup seeking innovative product development, let&apos;s talk.{" "}
-            <span className="cursor-pointer text-neutral-500 underline decoration-neutral-500">
+            <span className="cursor-pointer text-neutral-500 underline decoration-neutral-500 transition-colors hover:text-neutral-700 hover:decoration-neutral-700">
               Reach out via email
             </span>
             .
@@ -64,6 +64,8 @@ export default function Home() {
         </div>
         <div className="h-53.5 w-45 shrink-0 bg-neutral-200" />
       </div>
+
+      <h2 className="font-display mt-8 text-[40px] font-extrabold text-neutral-700">Projects</h2>
     </div>
   );
 }
