@@ -14,4 +14,16 @@ export const projects: ProjectType[] = [
     coverStyle: "bg-[#F9FAFB] px-3",
     href: "https://www.sedcst.com",
   },
+  {
+    id: "letterme",
+    title: "LetterMe",
+    description:
+      "A communication app that recreates the experience of exchanging letters. I designed and built the entire product from the ground up.",
+    tags: ["UI", "UX", "Mobile", "Backend"],
+    year: 2023,
+    isActive: true,
+    icon: "/projects/letterme/icon.png",
+    cover: "/projects/letterme/cover.png",
+    href: "https://www.letterme.app",
+  },
 ];

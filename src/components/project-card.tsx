@@ -59,6 +59,7 @@ export default function ProjectCard({
           fill
           sizes="360px"
           className={`h-full w-full object-contain ${coverStyle ?? ""}`}
+          priority
         />
       </div>
     </Link>
