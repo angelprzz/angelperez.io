@@ -8,7 +8,7 @@ import { technologies } from "@/data/technologies";
 
 export default function Home() {
   return (
-    <div className="mx-auto mb-96 w-180">
+    <div className="mx-auto w-180">
       {/* HERO */}
       <header className="mb-8 flex h-16 items-center justify-between">
         <div className="flex items-center gap-5">
@@ -116,6 +116,16 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* FOOTER */}
+      <div className="mt-8 h-px w-full bg-[#f7f7f7]" />
+      <div className="my-8 flex flex-col items-center gap-2">
+        <p className="text-center font-sans text-base font-normal">© 2026 Ángel Pérez • Handcrafted with ❤️️</p>
+        <p className="text-center font-sans text-xs font-light text-[#808080]">
+          Designed in Figma and coded on Visual Studio Code. Built with NextJS and TailwindCSS deployed with Cloudflare.
+          All text is set in Inter and Bricolage Grotesque typeface.
+        </p>
       </div>
     </div>
   );
