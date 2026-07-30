@@ -1,4 +1,8 @@
-import { Moon } from "lucide-react";
+import { GithubIcon } from "@dev.icons/react";
+import { FiArrowUpRight, FiFileText, FiMail, FiSun } from "react-icons/fi";
+import { VscTwitter } from "react-icons/vsc";
+import ContactButton from "@/components/contact-button";
+import LinkedinIcon from "@/components/icons/linkedin-icon";
 import ProjectCard from "@/components/project-card";
 import TechPill from "@/components/tech-pill";
 import { projects } from "@/data/projects";
@@ -42,7 +46,7 @@ export default function Home() {
             aria-label="Toggle theme"
             className="hover:text-foreground text-secondary cursor-pointer transition-colors"
           >
-            <Moon size={16} />
+            <FiSun size={16} />
           </button>
         </div>
       </header>
@@ -87,6 +91,29 @@ export default function Home() {
         {technologies.map((tech) => (
           <TechPill key={tech.text} {...tech} />
         ))}
+      </div>
+
+      {/* CONTACT */}
+      <h2 className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">Get in touch</h2>
+      <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-2">
+          <h3 className="font-display text-xl font-medium">Email</h3>
+          <ContactButton icon={FiMail} name="angelpxrz@gmail.com" rightIcon={FiArrowUpRight} />
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-display text-xl font-medium">Social Media</h3>
+          <div className="flex gap-4">
+            <ContactButton icon={VscTwitter} name="AngelTheMaker" />
+            <ContactButton icon={GithubIcon} name="angelprzz" />
+            <ContactButton icon={LinkedinIcon} name="angelprz" />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-display text-xl font-medium">Other</h3>
+          <ContactButton icon={FiFileText} name="Download CV" />
+        </div>
       </div>
     </div>
   );
