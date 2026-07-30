@@ -13,7 +13,8 @@
     "lint:fix": "eslint --fix .",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
     "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
-    "preview": "next build && next start"
+    "preview": "next build && next start",
+    "clean:images": "rm -rf .next/dev/cache/images .next/cache/images"
   },
   "dependencies": {
     "lucide-react": "^1.27.0",

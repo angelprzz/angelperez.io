@@ -2,17 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ProjectType } from "@/types/project";
 
-export default function ProjectCard({
-  title,
-  description,
-  tags,
-  year,
-  isActive,
-  icon,
-  cover,
-  coverStyle,
-  href,
-}: ProjectType) {
+export default function ProjectCard({ title, description, tags, year, isActive, icon, cover, href }: ProjectType) {
   return (
     <Link
       href={href}
@@ -58,7 +48,7 @@ export default function ProjectCard({
           alt={`${title} cover`}
           fill
           sizes="360px"
-          className={`h-full w-full object-contain ${coverStyle ?? ""}`}
+          className="h-full w-full object-contain"
           priority
         />
       </div>

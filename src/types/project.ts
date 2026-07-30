@@ -7,6 +7,5 @@ export interface ProjectType {
   isActive: boolean;
   icon: string;
   cover: string;
-  coverStyle?: string;
   href: string;
 }
