@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ProjectIcon from "@/components/project-icon";
 import type { ProjectType } from "@/types/project";
 
 export default function ProjectCard({ title, description, tags, year, isActive, icon, cover, href }: ProjectType) {
@@ -14,14 +15,17 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
         <div className="space-y-5">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
-              <Image src={icon} alt={`${title} logo`} width={32} height={32} unoptimized className="shrink-0" />
+              <ProjectIcon icon={icon} title={title} />
               <h3 className="font-display text-3xl font-extrabold">{title}</h3>
             </div>
             <p className="font-sans text-sm leading-relaxed tracking-widest">{description}</p>
           </div>
           <div className="flex flex-wrap gap-x-2 gap-y-3">
             {tags.map((tag) => (
-              <span key={tag} className="inline-block rounded-full bg-white px-3 py-1 font-sans text-sm font-normal">
+              <span
+                key={tag}
+                className="dark:bg-border dark:text-foreground inline-block rounded-full bg-white px-3 py-1 font-sans text-sm font-normal"
+              >
                 {tag}
               </span>
             ))}
