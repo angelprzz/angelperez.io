@@ -33,8 +33,8 @@ export default function Home() {
             <div className="space-y-4 font-sans text-base">
               <p>I love building digital products.</p>
               <p>
-                I&apos;m a full-stack design engineer with 7 years of experience working across small startups and
-                large companies.
+                I&apos;m a full-stack design engineer with 7 years of experience working across small startups and large
+                companies.
               </p>
               <p>My goal is to build human-centered products that help people connect, communicate and live better.</p>
               <p>Outside of work I enjoy music, cinema and philosophy.</p>

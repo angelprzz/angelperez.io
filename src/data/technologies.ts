@@ -11,7 +11,8 @@ import {
   Swift,
   TypescriptIcon,
 } from "@dev.icons/react";
-import { Aws, ExpoIcon, OpenaiIcon } from "@dev.icons/react/mono";
+import { ExpoIcon, OpenaiIcon } from "@dev.icons/react/mono";
+import AwsIcon from "@/components/icons/aws-icon";
 import SwiftUIIcon from "@/components/icons/swift-ui-icon";
 import type { TechnologyType } from "@/types/technology";
 
@@ -20,7 +21,7 @@ export const technologies: TechnologyType[] = [
   { icon: NextjsIcon, text: "NextJS" },
   { icon: Figma, text: "Figma" },
   { icon: NodejsIcon, text: "NodeJS" },
-  { icon: Aws, text: "AWS" },
+  { icon: AwsIcon, text: "AWS" },
   { icon: Python, text: "Python" },
   { icon: OpenaiIcon, text: "Codex" },
   { icon: ClaudeIcon, text: "Claude Code" },
