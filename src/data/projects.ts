@@ -11,7 +11,7 @@ export const projects: ProjectType[] = [
     isActive: true,
     icon: "/projects/sedcst/icon.svg",
     cover: "/projects/sedcst/cover.png",
-    href: "https://www.sedcst.com",
+    href: "https://sedcst.com",
   },
   {
     id: "letterme",
@@ -23,7 +23,7 @@ export const projects: ProjectType[] = [
     isActive: true,
     icon: "/projects/letterme/icon.png",
     cover: "/projects/letterme/cover.png",
-    href: "https://www.letterme.app",
+    href: "https://letterme.app",
   },
   {
     id: "angle",
@@ -58,7 +58,7 @@ export const projects: ProjectType[] = [
     isActive: false,
     icon: "/projects/nido/icon.png",
     cover: "/projects/nido/cover.png",
-    href: "https://www.instagram.com/getnido",
+    href: "https://instagram.com/getnido",
   },
   {
     id: "friend-theory",

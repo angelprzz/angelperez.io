@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${bricolageGrotesque.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${bricolageGrotesque.variable} h-full scroll-smooth antialiased`}>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );

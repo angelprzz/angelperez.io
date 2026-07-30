@@ -1,5 +1,6 @@
 import { FiSun } from "react-icons/fi";
 import ContactButton from "@/components/contact-button";
+import NavLinks from "@/components/nav-links";
 import ProjectCard from "@/components/project-card";
 import TechPill from "@/components/tech-pill";
 import { email, others, socials } from "@/data/contact";
@@ -8,20 +9,10 @@ import { technologies } from "@/data/technologies";
 
 export default function Home() {
   return (
-    <div className="mx-auto w-180">
+    <div id="about" className="mx-auto w-180">
       {/* HERO */}
       <header className="mb-8 flex h-16 items-center justify-between">
-        <div className="flex items-center gap-5">
-          <span className="font-display hover:text-foreground text-secondary cursor-pointer text-base font-medium transition-colors">
-            About
-          </span>
-          <span className="font-display hover:text-foreground text-secondary cursor-pointer text-base font-medium transition-colors">
-            Projects
-          </span>
-          <span className="font-display hover:text-foreground text-secondary cursor-pointer text-base font-medium transition-colors">
-            Contact
-          </span>
-        </div>
+        <NavLinks />
         <div className="flex items-center gap-5">
           <a
             href="https://github.com/angelprzz"
@@ -74,7 +65,9 @@ export default function Home() {
       </div>
 
       {/* PROJECTS */}
-      <h2 className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">Projects</h2>
+      <h2 id="projects" className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">
+        Projects
+      </h2>
 
       {/* Cards */}
       <div className="space-y-8">
@@ -92,7 +85,9 @@ export default function Home() {
       </div>
 
       {/* CONTACT */}
-      <h2 className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">Get in touch</h2>
+      <h2 id="contact" className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">
+        Get in touch
+      </h2>
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-1">
           <h3 className="font-display text-lg font-medium">Email</h3>
