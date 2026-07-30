@@ -52,7 +52,7 @@ export default function Home() {
 
       {/* PROJECTS */}
       <div className="space-y-4">
-        <h2 id="projects" className="font-display text-foreground text-[40px] font-extrabold">
+        <h2 id="projects" className="font-display text-foreground text-4xl font-extrabold">
           Projects
         </h2>
         <div className="space-y-8">
@@ -64,7 +64,7 @@ export default function Home() {
 
       {/* TECHNOLOGIES */}
       <div className="space-y-4">
-        <h2 className="font-display text-foreground text-[40px] font-extrabold">Technologies</h2>
+        <h2 className="font-display text-foreground text-4xl font-extrabold">Technologies</h2>
         <div className="flex flex-wrap gap-x-2 gap-y-4">
           {technologies.map((tech) => (
             <TechPill key={tech.text} {...tech} />
@@ -74,7 +74,7 @@ export default function Home() {
 
       {/* CONTACT */}
       <div className="space-y-4">
-        <h2 id="contact" className="font-display text-foreground text-[40px] font-extrabold">
+        <h2 id="contact" className="font-display text-foreground text-4xl font-extrabold">
           Get in touch
         </h2>
         <div className="flex flex-col gap-6">
