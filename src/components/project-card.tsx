@@ -8,7 +8,7 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex h-90 w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 shadow-md transition-transform duration-300 hover:scale-102"
+      className="bg-card flex h-90 w-full cursor-pointer overflow-hidden rounded-3xl shadow-md transition-transform duration-300 hover:scale-102"
     >
       <div className="flex h-full w-1/2 flex-col justify-between p-10">
         <div className="space-y-5">
@@ -27,17 +27,17 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
             ))}
           </div>
         </div>
-        <span className="flex items-center gap-1.5 font-sans text-sm font-medium text-[#808080]">
+        <span className="text-muted flex items-center gap-1.5 font-sans text-sm font-medium">
           {year} •{" "}
           {isActive ? (
             <>
-              <span className="text-green-500 drop-shadow-[0_0_6px_rgba(34,197,94,0.9)]">Active</span>
-              <span className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_4px_2px] shadow-green-500/50" />
+              <span className="text-success drop-shadow-success/90 drop-shadow-[0_0_6px]">Active</span>
+              <span className="bg-success shadow-success/50 h-2 w-2 rounded-full shadow-[0_0_4px_2px]" />
             </>
           ) : (
             <>
-              <span className="text-[#F97171]">Closed</span>
-              <span className="h-2 w-2 rounded-full bg-[#F97171]" />
+              <span className="text-danger">Closed</span>
+              <span className="bg-danger h-2 w-2 rounded-full" />
             </>
           )}
         </span>

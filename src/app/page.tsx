@@ -43,7 +43,7 @@ export default function Home() {
             .
           </p>
         </div>
-        <div className="h-53.5 w-45 shrink-0 bg-neutral-200" />
+        <div className="bg-card h-53.5 w-45 shrink-0" />
       </div>
 
       {/* PROJECTS */}
@@ -96,10 +96,10 @@ export default function Home() {
       </div>
 
       {/* FOOTER */}
-      <div className="mt-8 h-px w-full bg-[#f7f7f7]" />
+      <div className="bg-card mt-8 h-px w-full" />
       <div className="my-8 flex flex-col items-center gap-2">
         <p className="text-center font-sans text-base font-normal">© 2026 Ángel Pérez • Handcrafted with ❤️️</p>
-        <p className="text-center font-sans text-xs font-light text-[#808080]">
+        <p className="text-muted text-center font-sans text-xs font-light">
           Designed in Figma and coded on Visual Studio Code. Built with NextJS and TailwindCSS deployed with Cloudflare.
           All text is set in Inter and Bricolage Grotesque typeface.
         </p>
