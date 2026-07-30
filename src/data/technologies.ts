@@ -14,7 +14,7 @@ import {
   Swift,
   TypescriptIcon,
 } from "@dev.icons/react";
-import SwiftUIIcon from "@/components/icons/swiftui-icon";
+import SwiftUIIcon from "@/components/icons/swift-ui-icon";
 import type { TechnologyType } from "@/types/technology";
 
 export const technologies: TechnologyType[] = [
