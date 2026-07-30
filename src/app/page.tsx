@@ -94,13 +94,13 @@ export default function Home() {
       {/* CONTACT */}
       <h2 className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">Get in touch</h2>
       <div className="flex flex-col gap-6">
-        <div className="flex flex-col gap-2">
-          <h3 className="font-display text-xl font-medium">Email</h3>
+        <div className="flex flex-col gap-1">
+          <h3 className="font-display text-lg font-medium">Email</h3>
           <ContactButton {...email} />
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-display text-xl font-medium">Social Media</h3>
+        <div className="flex flex-col gap-1">
+          <h3 className="font-display text-lg font-medium">Social Media</h3>
           <div className="flex gap-4">
             {socials.map((social) => (
               <ContactButton key={social.name} {...social} />
@@ -108,8 +108,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-display text-xl font-medium">Other</h3>
+        <div className="flex flex-col gap-1">
+          <h3 className="font-display text-lg font-medium">Other</h3>
           <div className="flex gap-4">
             {others.map((item) => (
               <ContactButton key={item.name} {...item} />
