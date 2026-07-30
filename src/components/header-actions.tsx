@@ -1,4 +1,4 @@
-import { FiSun } from "react-icons/fi";
+import ThemeToggleButton from "@/components/theme-toggle-button";
 
 export default function HeaderActions() {
   return (
@@ -19,13 +19,7 @@ export default function HeaderActions() {
       >
         Twitter
       </a>
-      <button
-        type="button"
-        aria-label="Toggle theme"
-        className="hover:text-foreground text-secondary cursor-pointer transition-colors"
-      >
-        <FiSun size={16} />
-      </button>
+      <ThemeToggleButton />
     </div>
   );
 }

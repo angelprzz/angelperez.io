@@ -33,7 +33,7 @@ export const projects: ProjectType[] = [
     tags: ["Mobile", "Frontend"],
     year: 2021,
     isActive: false,
-    icon: "/projects/angle/icon.png",
+    icon: "/projects/angle/icon.svg",
     cover: "/projects/angle/cover.png",
     href: "https://angleaudio.webflow.io",
   },

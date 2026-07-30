@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   /* Base */
   --background: #ffffff;
@@ -19,6 +21,22 @@
 
   /* Interaction */
   --selection: #b6c1cf;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  --secondary: #a3a3a3;
+  --muted: #8a8a8a;
+
+  --card: #1a1a1a;
+  --border: #2e2e2e;
+
+  --success: #4ade80;
+  --danger: #f87171;
+
+  --selection: #3b4a5c;
 }
 
 @theme inline {
@@ -42,4 +60,14 @@ body {
 
 ::selection {
   background-color: var(--selection);
+}
+
+@layer base {
+  * {
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease,
+      fill 0.3s ease;
+  }
 }

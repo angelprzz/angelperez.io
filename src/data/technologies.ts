@@ -1,19 +1,17 @@
 import {
   _React,
-  Aws,
   ClaudeIcon,
   Dart,
-  ExpoIcon,
   Figma,
   Flutter,
   NextjsIcon,
   NodejsIcon,
-  OpenaiIcon,
   Postgresql,
   Python,
   Swift,
   TypescriptIcon,
 } from "@dev.icons/react";
+import { Aws, ExpoIcon, OpenaiIcon } from "@dev.icons/react/mono";
 import SwiftUIIcon from "@/components/icons/swift-ui-icon";
 import type { TechnologyType } from "@/types/technology";
 
