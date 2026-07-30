@@ -34,9 +34,12 @@ export default function Home() {
           <p>Outside of work I enjoy music, cinema and philosophy.</p>
           <p>
             If you&apos;re a founder or startup seeking innovative product development, let&apos;s talk.{" "}
-            <span className="hover:text-foreground hover:decoration-foreground text-secondary decoration-secondary cursor-pointer underline transition-colors">
+            <a
+              href="mailto:angelpxrz@gmail.com"
+              className="hover:text-foreground hover:decoration-foreground text-secondary decoration-secondary cursor-pointer italic underline underline-offset-3 transition-colors"
+            >
               Reach out via email
-            </span>
+            </a>
             .
           </p>
         </div>
