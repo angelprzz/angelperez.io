@@ -18,7 +18,7 @@ export default function FloatingHeader() {
 
   return (
     <div
-      className={`dark:border-border dark:bg-card/80 fixed top-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-5 rounded-full border border-neutral-200 bg-white/80 px-6 py-3 shadow-sm backdrop-blur-sm transition-all duration-300 ${
+      className={`dark:border-border dark:bg-card/80 border-border fixed top-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-5 rounded-full border bg-white/80 px-6 py-3 shadow-sm backdrop-blur-sm transition-all duration-300 ${
         visible ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-4 opacity-0"
       }`}
     >
