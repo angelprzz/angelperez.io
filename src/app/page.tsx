@@ -83,7 +83,7 @@ export default function Home() {
 
       {/* TECHNOLOGIES */}
       <h2 className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">Technologies</h2>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-4">
         {technologies.map((tech) => (
           <TechPill key={tech.text} {...tech} />
         ))}
