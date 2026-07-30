@@ -1,5 +1,7 @@
+import { _React, Figma, NextjsIcon, NodejsIcon } from "@dev.icons/react";
 import { Moon } from "lucide-react";
 import ProjectCard from "@/components/project-card";
+import TechPill from "@/components/tech-pill";
 import { projects } from "@/data/projects";
 
 export default function Home() {
@@ -77,6 +79,15 @@ export default function Home() {
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
+      </div>
+
+      {/* TECHNOLOGIES */}
+      <h2 className="font-display text-foreground mt-8 mb-4 text-[40px] font-extrabold">Technologies</h2>
+      <div className="flex flex-wrap gap-2">
+        <TechPill icon={_React} text="React" />
+        <TechPill icon={NextjsIcon} text="NextJS" />
+        <TechPill icon={Figma} text="Figma" />
+        <TechPill icon={NodejsIcon} text="NodeJS" />
       </div>
     </div>
   );

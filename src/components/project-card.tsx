@@ -14,7 +14,7 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
         <div className="space-y-5">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
-              <Image src={icon} alt={`${title} logo`} width={32} height={32} className="shrink-0" />
+              <Image src={icon} alt={`${title} logo`} width={32} height={32} unoptimized className="shrink-0" />
               <h3 className="font-display text-3xl font-extrabold">{title}</h3>
             </div>
             <p className="font-sans text-sm leading-relaxed tracking-widest">{description}</p>
@@ -50,6 +50,7 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
           sizes="360px"
           className="h-full w-full object-contain"
           priority
+          unoptimized
         />
       </div>
     </Link>
