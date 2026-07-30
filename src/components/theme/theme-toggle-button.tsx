@@ -1,7 +1,7 @@
 "use client";
 
 import { FiMoon, FiSun } from "react-icons/fi";
-import { useTheme } from "@/components/theme-provider";
+import { useTheme } from "@/components/theme/theme-provider";
 
 export default function ThemeToggleButton({ className = "" }: { className?: string }) {
   const { isDark, toggle } = useTheme();

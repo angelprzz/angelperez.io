@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import NavLinks from "@/components/nav-links";
-import ThemeToggleButton from "@/components/theme-toggle-button";
+import HeaderLinks from "@/components/header/header-links";
+import ThemeToggleButton from "@/components/theme/theme-toggle-button";
 
 const SCROLL_THRESHOLD = 135;
 
@@ -22,7 +22,7 @@ export default function FloatingHeader() {
         visible ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-4 opacity-0"
       }`}
     >
-      <NavLinks />
+      <HeaderLinks />
       <ThemeToggleButton className="pl-2" />
     </div>
   );

@@ -1,9 +1,9 @@
-import ContactButton from "@/components/contact-button";
-import FloatingHeader from "@/components/floating-header";
-import HeaderActions from "@/components/header-actions";
-import NavLinks from "@/components/nav-links";
-import ProjectCard from "@/components/project-card";
-import TechPill from "@/components/tech-pill";
+import ContactButton from "@/components/contact/contact-button";
+import FloatingHeader from "@/components/header/floating-header";
+import HeaderActions from "@/components/header/header-actions";
+import HeaderLinks from "@/components/header/header-links";
+import ProjectCard from "@/components/projects/project-card";
+import TechPill from "@/components/technologies/tech-pill";
 import { email, others, socials } from "@/data/contact";
 import { projects } from "@/data/projects";
 import { technologies } from "@/data/technologies";
@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* HERO */}
       <header className="mb-8 flex h-16 items-center justify-between">
-        <NavLinks />
+        <HeaderLinks />
         <HeaderActions />
       </header>
 

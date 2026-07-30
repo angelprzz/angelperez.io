@@ -6,7 +6,7 @@ type SectionType = "about" | "projects" | "contact";
 
 const ACTIVE_THRESHOLD = 100;
 
-export default function NavLinks() {
+export default function HeaderLinks() {
   const [active, setActive] = useState<SectionType>("about");
 
   useEffect(() => {

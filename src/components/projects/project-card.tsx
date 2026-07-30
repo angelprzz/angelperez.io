@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProjectIcon from "@/components/project-icon";
+import ProjectIcon from "@/components/projects/project-icon";
 import type { ProjectType } from "@/types/project";
 
 export default function ProjectCard({ title, description, tags, year, isActive, icon, cover, href }: ProjectType) {

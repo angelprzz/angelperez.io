@@ -1,4 +1,4 @@
-import ThemeToggleButton from "@/components/theme-toggle-button";
+import ThemeToggleButton from "@/components/theme/theme-toggle-button";
 
 export default function HeaderActions() {
   return (
