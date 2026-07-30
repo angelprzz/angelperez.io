@@ -1,11 +1,6 @@
-import type { ComponentType } from "react";
+import type { TechnologyType } from "@/types/technology";
 
-interface TechPillPropsType {
-  icon: ComponentType<{ size?: number }>;
-  text: string;
-}
-
-export default function TechPill({ icon: Icon, text }: TechPillPropsType) {
+export default function TechPill({ icon: Icon, text }: TechnologyType) {
   return (
     <span className="inline-flex items-center gap-1.5 rounded-full bg-[#f7f7f7] px-5 py-1.5 font-sans text-base font-normal">
       <Icon size={16} />
