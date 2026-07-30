@@ -2,6 +2,7 @@ import ContactButton from "@/components/contact/contact-button";
 import FloatingHeader from "@/components/header/floating-header";
 import HeaderActions from "@/components/header/header-actions";
 import HeaderLinks from "@/components/header/header-links";
+import Map from "@/components/location/map";
 import ProjectCard from "@/components/projects/project-card";
 import TechPill from "@/components/technologies/tech-pill";
 import { email, others, socials } from "@/data/contact";
@@ -72,6 +73,18 @@ export default function Home() {
             {technologies.map((tech) => (
               <TechPill key={tech.text} {...tech} />
             ))}
+          </div>
+        </section>
+
+        {/* LOCATION */}
+        <section className="space-y-4">
+          <div className="space-y-2">
+            <h2 className="font-display text-foreground text-4xl font-extrabold">Location</h2>
+            <p className="text-muted font-sans text-base font-medium">Open to relocate anywhere on planet Earth</p>
+          </div>
+          <div className="flex gap-5">
+            <Map location="Madrid, Spain" timeZone="Europe/Madrid" pillText="In between" />
+            <Map location="Bali, Indonesia" timeZone="Asia/Makassar" pillText="and" />
           </div>
         </section>
 

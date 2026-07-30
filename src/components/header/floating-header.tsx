@@ -23,7 +23,7 @@ export default function FloatingHeader() {
       }`}
     >
       <HeaderLinks />
-      <ThemeToggleButton className="pl-2" />
+      <ThemeToggleButton className="ml-2" />
     </div>
   );
 }
