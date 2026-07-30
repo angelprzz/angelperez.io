@@ -1,10 +1,8 @@
-import { GithubIcon } from "@dev.icons/react";
-import { FiArrowUpRight, FiFileText, FiMail, FiSun } from "react-icons/fi";
-import { VscTwitter } from "react-icons/vsc";
+import { FiSun } from "react-icons/fi";
 import ContactButton from "@/components/contact-button";
-import LinkedinIcon from "@/components/icons/linkedin-icon";
 import ProjectCard from "@/components/project-card";
 import TechPill from "@/components/tech-pill";
+import { email, others, socials } from "@/data/contact";
 import { projects } from "@/data/projects";
 import { technologies } from "@/data/technologies";
 
@@ -98,21 +96,25 @@ export default function Home() {
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-2">
           <h3 className="font-display text-xl font-medium">Email</h3>
-          <ContactButton icon={FiMail} name="angelpxrz@gmail.com" rightIcon={FiArrowUpRight} />
+          <ContactButton {...email} />
         </div>
 
         <div className="flex flex-col gap-2">
           <h3 className="font-display text-xl font-medium">Social Media</h3>
           <div className="flex gap-4">
-            <ContactButton icon={VscTwitter} name="AngelTheMaker" />
-            <ContactButton icon={GithubIcon} name="angelprzz" />
-            <ContactButton icon={LinkedinIcon} name="angelprz" />
+            {socials.map((social) => (
+              <ContactButton key={social.name} {...social} />
+            ))}
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
           <h3 className="font-display text-xl font-medium">Other</h3>
-          <ContactButton icon={FiFileText} name="Download CV" />
+          <div className="flex gap-4">
+            {others.map((item) => (
+              <ContactButton key={item.name} {...item} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
