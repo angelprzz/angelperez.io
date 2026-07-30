@@ -13,8 +13,9 @@ export default function NavLinks() {
     const updateActive = () => {
       const projectsTop = document.getElementById("projects")?.getBoundingClientRect().top ?? Infinity;
       const contactTop = document.getElementById("contact")?.getBoundingClientRect().top ?? Infinity;
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 1;
 
-      if (contactTop <= ACTIVE_THRESHOLD) {
+      if (atBottom || contactTop <= ACTIVE_THRESHOLD) {
         setActive("contact");
       } else if (projectsTop <= ACTIVE_THRESHOLD) {
         setActive("projects");
@@ -29,8 +30,8 @@ export default function NavLinks() {
   }, []);
 
   const linkClassName = (section: SectionType) =>
-    `font-display cursor-pointer text-base font-medium transition-colors ${
-      active === section ? "text-foreground" : "text-secondary hover:text-foreground"
+    `font-display cursor-pointer text-base transition-colors ${
+      active === section ? "text-foreground font-bold" : "text-secondary hover:text-foreground font-medium"
     }`;
 
   return (

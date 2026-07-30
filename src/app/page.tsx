@@ -1,5 +1,6 @@
-import { FiSun } from "react-icons/fi";
 import ContactButton from "@/components/contact-button";
+import FloatingHeader from "@/components/floating-header";
+import HeaderActions from "@/components/header-actions";
 import NavLinks from "@/components/nav-links";
 import ProjectCard from "@/components/project-card";
 import TechPill from "@/components/tech-pill";
@@ -10,34 +11,12 @@ import { technologies } from "@/data/technologies";
 export default function Home() {
   return (
     <div id="about" className="mx-auto w-180">
+      <FloatingHeader />
+
       {/* HERO */}
       <header className="mb-8 flex h-16 items-center justify-between">
         <NavLinks />
-        <div className="flex items-center gap-5">
-          <a
-            href="https://github.com/angelprzz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-display hover:text-foreground text-secondary text-base font-medium transition-colors"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://x.com/AngelTheMaker"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-display hover:text-foreground text-secondary text-base font-medium transition-colors"
-          >
-            Twitter
-          </a>
-          <button
-            type="button"
-            aria-label="Toggle theme"
-            className="hover:text-foreground text-secondary cursor-pointer transition-colors"
-          >
-            <FiSun size={16} />
-          </button>
-        </div>
+        <HeaderActions />
       </header>
 
       {/* HERO */}
