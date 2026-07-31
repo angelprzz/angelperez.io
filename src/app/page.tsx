@@ -160,8 +160,8 @@ export default function Home() {
             >
               coded
             </a>{" "}
-            on Visual Studio Code. Built with NextJS and TailwindCSS deployed with Cloudflare. All text is set in Inter
-            and Bricolage Grotesque typeface.
+            on Visual Studio Code. Built with NextJS and TailwindCSS, deployed with Cloudflare. All text is set in Inter
+            and Bricolage Grotesque typefaces.
           </p>
         </div>
       </footer>
