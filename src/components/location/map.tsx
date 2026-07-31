@@ -40,6 +40,7 @@ export default function Map({
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
         initialViewState={{ longitude: centerLng, latitude: centerLat, zoom }}
         mapStyle={isDark ? DARK_MAP_STYLE : LIGHT_MAP_STYLE}
+        styleDiffing={false}
         attributionControl={false}
         style={{
           position: "absolute",
