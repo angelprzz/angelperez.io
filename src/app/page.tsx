@@ -143,8 +143,25 @@ export default function Home() {
         <div className="my-8 flex flex-col items-center gap-2">
           <p className="text-center font-sans text-base font-normal">© 2026 Ángel Pérez • Handcrafted with ❤️️</p>
           <p className="text-muted text-center font-sans text-xs font-light">
-            Designed in Figma and coded on Visual Studio Code. Built with NextJS and TailwindCSS deployed with
-            Cloudflare. All text is set in Inter and Bricolage Grotesque typeface.
+            <a
+              href="https://www.figma.com/design/v2gYW1YtS4525qJr2aB18W/angelperez.io?node-id=170-275&t=8d5Nm3iTTlOTghnr-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-3"
+            >
+              Designed
+            </a>{" "}
+            in Figma and{" "}
+            <a
+              href="https://github.com/angelprzz/angelperez.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-3"
+            >
+              coded
+            </a>{" "}
+            on Visual Studio Code. Built with NextJS and TailwindCSS deployed with Cloudflare. All text is set in Inter
+            and Bricolage Grotesque typeface.
           </p>
         </div>
       </footer>
