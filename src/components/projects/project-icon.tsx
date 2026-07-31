@@ -13,7 +13,7 @@ export default function ProjectIcon({ icon, title }: ProjectIconPropsType) {
       <span
         role="img"
         aria-label={alt}
-        className="bg-foreground h-8 w-8 shrink-0"
+        className="bg-foreground h-7 w-7 shrink-0 sm:h-8 sm:w-8"
         style={{
           WebkitMaskImage: `url(${icon})`,
           maskImage: `url(${icon})`,
@@ -26,5 +26,14 @@ export default function ProjectIcon({ icon, title }: ProjectIconPropsType) {
     );
   }
 
-  return <Image src={icon} alt={alt} width={32} height={32} unoptimized className="shrink-0" />;
+  return (
+    <Image
+      src={icon}
+      alt={alt}
+      width={32}
+      height={32}
+      unoptimized
+      className="h-7 w-7 shrink-0 sm:h-8 sm:w-8"
+    />
+  );
 }

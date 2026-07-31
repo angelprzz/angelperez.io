@@ -16,7 +16,7 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
               <ProjectIcon icon={icon} title={title} />
-              <h3 className="font-display text-3xl font-extrabold">{title}</h3>
+              <h3 className="font-display text-2xl font-extrabold sm:text-3xl">{title}</h3>
             </div>
             <p className="font-sans text-sm leading-relaxed tracking-widest">{description}</p>
           </div>
