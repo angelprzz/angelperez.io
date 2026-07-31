@@ -3,6 +3,10 @@
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapboxMap, { Marker } from "react-map-gl/mapbox";
 import LiveClock from "@/components/location/live-clock";
+import { useTheme } from "@/components/theme/theme-provider";
+
+const LIGHT_MAP_STYLE = "mapbox://styles/angelprzz/cms8ae72a005d01qtdzwae12a";
+const DARK_MAP_STYLE = "mapbox://styles/angelprzz/cms8er9fr006t01s8gwsicbn6";
 
 interface MapPropsType {
   location: string;
@@ -25,12 +29,14 @@ export default function Map({
   markerLng,
   zoom = 10,
 }: MapPropsType) {
+  const { isDark } = useTheme();
+
   return (
     <div className="bg-card relative flex h-85.75 w-87.5 flex-col justify-between overflow-hidden rounded-3xl p-4">
       <MapboxMap
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
         initialViewState={{ longitude: centerLng, latitude: centerLat, zoom }}
-        mapStyle="mapbox://styles/mapbox/streets-v12"
+        mapStyle={isDark ? DARK_MAP_STYLE : LIGHT_MAP_STYLE}
         attributionControl={false}
         style={{ position: "absolute", inset: 0 }}
       >
