@@ -3,7 +3,17 @@ import Link from "next/link";
 import ProjectIcon from "@/components/projects/project-icon";
 import type { ProjectType } from "@/types/project";
 
-export default function ProjectCard({ title, description, tags, year, isActive, icon, cover, href }: ProjectType) {
+export default function ProjectCard({
+  title,
+  description,
+  tags,
+  year,
+  isActive,
+  icon,
+  cover,
+  coverStyle,
+  href,
+}: ProjectType) {
   return (
     <Link
       href={href}
@@ -46,7 +56,7 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
           )}
         </span>
       </div>
-      <div className="relative h-56 w-full sm:h-full sm:w-1/2">
+      <div className={`relative h-56 w-full sm:h-full sm:w-1/2 ${coverStyle ?? ""}`}>
         <Image
           src={cover}
           alt={`${title} cover`}

@@ -11,6 +11,7 @@ export const projects: ProjectType[] = [
     isActive: true,
     icon: "/projects/sedcst/icon.svg",
     cover: "/projects/sedcst/cover.png",
+    coverStyle: "bg-[#F9FAFB]",
     href: "https://sedcst.com",
   },
   {
@@ -23,6 +24,7 @@ export const projects: ProjectType[] = [
     isActive: true,
     icon: "/projects/letterme/icon.png",
     cover: "/projects/letterme/cover.png",
+    coverStyle: "bg-[#FAF9FB]",
     href: "https://letterme.app",
   },
   {
@@ -35,6 +37,7 @@ export const projects: ProjectType[] = [
     isActive: false,
     icon: "/projects/angle/icon.svg",
     cover: "/projects/angle/cover.png",
+    coverStyle: "bg-[#ECF2F1]",
     href: "https://angleaudio.webflow.io",
   },
   {
@@ -46,6 +49,7 @@ export const projects: ProjectType[] = [
     isActive: true,
     icon: "/projects/criptan/icon.png",
     cover: "/projects/criptan/cover.png",
+    coverStyle: "bg-white",
     href: "https://criptan.com",
   },
   {
@@ -58,6 +62,7 @@ export const projects: ProjectType[] = [
     isActive: false,
     icon: "/projects/nido/icon.png",
     cover: "/projects/nido/cover.png",
+    coverStyle: "bg-[#FDFDFD]",
     href: "https://instagram.com/getnido",
   },
   {
@@ -70,6 +75,7 @@ export const projects: ProjectType[] = [
     isActive: false,
     icon: "/projects/friend-theory/icon.png",
     cover: "/projects/friend-theory/cover.png",
+    coverStyle: "bg-[#F4F4F4]",
     href: "https://friendtheory.com",
   },
 ];
