@@ -72,3 +72,7 @@ body {
       filter 0.3s ease;
   }
 }
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}

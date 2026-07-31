@@ -83,8 +83,26 @@ export default function Home() {
             <p className="text-muted font-sans text-base font-medium">Open to relocate anywhere on planet Earth</p>
           </div>
           <div className="flex gap-5">
-            <Map location="Madrid, Spain" timeZone="Europe/Madrid" pillText="In between" />
-            <Map location="Bali, Indonesia" timeZone="Asia/Makassar" pillText="and" />
+            <Map
+              location="Madrid, Spain"
+              timeZone="Europe/Madrid"
+              pillText="In between"
+              centerLat={40.4168}
+              centerLng={-3.7038}
+              markerLat={40.411491}
+              markerLng={-3.702453}
+              zoom={10.75}
+            />
+            <Map
+              location="Bali, Indonesia"
+              timeZone="Asia/Makassar"
+              pillText="and"
+              centerLat={-8.5144}
+              centerLng={115.1763}
+              markerLat={-8.64608}
+              markerLng={115.116306}
+              zoom={7}
+            />
           </div>
         </section>
 
