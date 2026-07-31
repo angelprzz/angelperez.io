@@ -3,10 +3,12 @@
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapboxMap, { Marker } from "react-map-gl/mapbox";
 import LiveClock from "@/components/location/live-clock";
+import useFadeOnChange from "@/hooks/use-fade-on-change";
 import { useTheme } from "@/components/theme/theme-provider";
 
 const LIGHT_MAP_STYLE = "mapbox://styles/angelprzz/cms8ae72a005d01qtdzwae12a";
 const DARK_MAP_STYLE = "mapbox://styles/angelprzz/cms8er9fr006t01s8gwsicbn6";
+const FADE_DURATION_MS = 200;
 
 interface MapPropsType {
   location: string;
@@ -30,6 +32,7 @@ export default function Map({
   zoom = 10,
 }: MapPropsType) {
   const { isDark } = useTheme();
+  const mapVisible = useFadeOnChange(isDark, FADE_DURATION_MS);
 
   return (
     <div className="bg-card relative flex h-85.75 w-87.5 flex-col justify-between overflow-hidden rounded-3xl p-4">
@@ -38,7 +41,12 @@ export default function Map({
         initialViewState={{ longitude: centerLng, latitude: centerLat, zoom }}
         mapStyle={isDark ? DARK_MAP_STYLE : LIGHT_MAP_STYLE}
         attributionControl={false}
-        style={{ position: "absolute", inset: 0 }}
+        style={{
+          position: "absolute",
+          inset: 0,
+          opacity: mapVisible ? 1 : 0,
+          transition: `opacity ${FADE_DURATION_MS}ms ease`,
+        }}
       >
         <Marker longitude={markerLng} latitude={markerLat}>
           <div className="relative flex h-6 w-6 items-center justify-center">
