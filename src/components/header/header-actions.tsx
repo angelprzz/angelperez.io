@@ -7,7 +7,7 @@ export default function HeaderActions() {
         href="https://github.com/angelprzz"
         target="_blank"
         rel="noopener noreferrer"
-        className="font-display hover:text-foreground text-secondary text-base font-medium transition-colors"
+        className="font-display hover:text-foreground text-secondary hidden text-base font-medium transition-colors sm:inline"
       >
         GitHub
       </a>
@@ -15,7 +15,7 @@ export default function HeaderActions() {
         href="https://x.com/AngelTheMaker"
         target="_blank"
         rel="noopener noreferrer"
-        className="font-display hover:text-foreground text-secondary text-base font-medium transition-colors"
+        className="font-display hover:text-foreground text-secondary hidden text-base font-medium transition-colors sm:inline"
       >
         Twitter
       </a>

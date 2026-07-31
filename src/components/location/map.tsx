@@ -4,6 +4,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import MapboxMap, { Marker } from "react-map-gl/mapbox";
 import LiveClock from "@/components/location/live-clock";
 import useFadeOnChange from "@/hooks/use-fade-on-change";
+import useIsMobile from "@/hooks/use-is-mobile";
 import { useTheme } from "@/components/theme/theme-provider";
 
 const LIGHT_MAP_STYLE = "mapbox://styles/angelprzz/cms8ae72a005d01qtdzwae12a";
@@ -33,15 +34,17 @@ export default function Map({
 }: MapPropsType) {
   const { isDark } = useTheme();
   const mapVisible = useFadeOnChange(isDark, FADE_DURATION_MS);
+  const isMobile = useIsMobile();
 
   return (
-    <div className="bg-card relative flex h-85.75 w-87.5 flex-col justify-between overflow-hidden rounded-3xl p-4">
+    <div className="bg-card relative flex h-85.75 w-full flex-col justify-between overflow-hidden rounded-3xl p-4 sm:w-87.5">
       <MapboxMap
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
         initialViewState={{ longitude: centerLng, latitude: centerLat, zoom }}
         mapStyle={isDark ? DARK_MAP_STYLE : LIGHT_MAP_STYLE}
         styleDiffing={false}
         attributionControl={false}
+        dragPan={!isMobile}
         style={{
           position: "absolute",
           inset: 0,

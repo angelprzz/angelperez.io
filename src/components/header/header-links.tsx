@@ -30,7 +30,7 @@ export default function HeaderLinks() {
   }, []);
 
   const linkClassName = (section: SectionType) =>
-    `font-display cursor-pointer text-base transition-colors ${
+    `font-display cursor-pointer text-sm transition-colors sm:text-base ${
       active === section ? "text-foreground font-bold" : "text-secondary hover:text-foreground font-medium"
     }`;
 

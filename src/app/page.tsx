@@ -11,11 +11,11 @@ import { technologies } from "@/data/technologies";
 
 export default function Home() {
   return (
-    <div className="mx-auto w-180 space-y-8">
+    <div className="mx-auto w-full max-w-180 space-y-8 px-4 md:px-0">
       <FloatingHeader />
 
       {/* HEADER */}
-      <header id="about" className="flex h-16 items-center justify-between">
+      <header id="about" className="flex h-16 items-center justify-between gap-4">
         <HeaderLinks />
         <HeaderActions />
       </header>
@@ -23,15 +23,17 @@ export default function Home() {
       <main className="space-y-8">
         {/* HERO */}
         <section className="space-y-4">
-          <div className="-space-y-2">
-            <h1 className="font-display text-[40px] font-extrabold">Hey, I&apos;m Ángel :)</h1>
-            <h1 className="font-display text-secondary text-[40px] font-semibold">
+          <div>
+            <h1 className="font-display text-2xl leading-snug font-extrabold md:text-[40px] md:leading-15">
+              Hey, I&apos;m Ángel :)
+            </h1>
+            <h1 className="font-display text-secondary text-2xl leading-snug font-semibold md:-mt-2 md:text-[40px] md:leading-15">
               Software Engineer, Designer, Human
             </h1>
           </div>
 
-          <div className="flex gap-5">
-            <div className="space-y-4 font-sans text-base">
+          <div className="mt-4 flex flex-col gap-5 md:flex-row">
+            <div className="space-y-4 font-sans text-sm md:text-base">
               <p>I love building digital products.</p>
               <p>
                 I&apos;m a full-stack design engineer with 7 years of experience working across small startups and large
@@ -50,13 +52,13 @@ export default function Home() {
                 .
               </p>
             </div>
-            <div className="bg-card h-53.5 w-45 shrink-0" />
+            <div className="bg-card h-56 w-full shrink-0 md:h-53.5 md:w-45" />
           </div>
         </section>
 
         {/* PROJECTS */}
         <section className="space-y-4">
-          <h2 id="projects" className="font-display text-foreground text-4xl font-extrabold">
+          <h2 id="projects" className="font-display text-foreground text-2xl font-extrabold sm:text-4xl">
             Projects
           </h2>
           <div className="space-y-8">
@@ -68,7 +70,7 @@ export default function Home() {
 
         {/* TECHNOLOGIES */}
         <section className="space-y-4">
-          <h2 className="font-display text-foreground text-4xl font-extrabold">Technologies</h2>
+          <h2 className="font-display text-foreground text-2xl font-extrabold sm:text-4xl">Technologies</h2>
           <div className="flex flex-wrap gap-x-2 gap-y-4">
             {technologies.map((tech) => (
               <TechPill key={tech.text} {...tech} />
@@ -79,10 +81,12 @@ export default function Home() {
         {/* LOCATION */}
         <section className="space-y-4">
           <div className="space-y-2">
-            <h2 className="font-display text-foreground text-4xl font-extrabold">Location</h2>
-            <p className="text-muted font-sans text-base font-medium">Open to relocate anywhere on planet Earth 🌎</p>
+            <h2 className="font-display text-foreground text-2xl font-extrabold sm:text-4xl">Location</h2>
+            <p className="text-muted font-sans text-sm font-medium sm:text-base">
+              Open to relocate anywhere on planet Earth 🌎
+            </p>
           </div>
-          <div className="flex gap-5">
+          <div className="flex flex-col gap-5 sm:flex-row">
             <Map
               location="Madrid, Spain"
               timeZone="Europe/Madrid"
@@ -108,18 +112,18 @@ export default function Home() {
 
         {/* CONTACT */}
         <section className="space-y-4">
-          <h2 id="contact" className="font-display text-foreground text-4xl font-extrabold">
+          <h2 id="contact" className="font-display text-foreground text-2xl font-extrabold sm:text-4xl">
             Get in touch
           </h2>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">
-              <h3 className="font-display text-lg font-medium">Email</h3>
+              <h3 className="font-display text-base font-medium sm:text-lg">Email</h3>
               <ContactButton {...email} />
             </div>
 
             <div className="flex flex-col gap-1">
-              <h3 className="font-display text-lg font-medium">Social Media</h3>
-              <div className="flex gap-4">
+              <h3 className="font-display text-base font-medium sm:text-lg">Social Media</h3>
+              <div className="flex flex-wrap gap-4">
                 {socials.map((social) => (
                   <ContactButton key={social.name} {...social} />
                 ))}
@@ -127,8 +131,8 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-1">
-              <h3 className="font-display text-lg font-medium">Other</h3>
-              <div className="flex gap-4">
+              <h3 className="font-display text-base font-medium sm:text-lg">Other</h3>
+              <div className="flex flex-wrap gap-4">
                 {others.map((item) => (
                   <ContactButton key={item.name} {...item} />
                 ))}
@@ -141,8 +145,10 @@ export default function Home() {
       <footer>
         <div className="bg-card h-px w-full" />
         <div className="my-8 flex flex-col items-center gap-2">
-          <p className="text-center font-sans text-base font-normal">© 2026 Ángel Pérez • Handcrafted with ❤️️</p>
-          <p className="text-muted text-center font-sans text-xs font-light">
+          <p className="text-center font-sans text-sm font-normal sm:text-base">
+            © 2026 Ángel Pérez • Handcrafted with ❤️️
+          </p>
+          <p className="text-muted text-center font-sans text-[10px] font-light sm:text-xs">
             <a
               href="https://www.figma.com/design/v2gYW1YtS4525qJr2aB18W/angelperez.io?node-id=170-275&t=8d5Nm3iTTlOTghnr-1"
               target="_blank"

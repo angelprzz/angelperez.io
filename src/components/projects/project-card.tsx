@@ -9,9 +9,9 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-card flex h-90 w-full cursor-pointer overflow-hidden rounded-3xl shadow-md transition-transform duration-300 hover:scale-102"
+      className="bg-card flex w-full cursor-pointer flex-col overflow-hidden rounded-3xl shadow-md transition-transform duration-300 hover:scale-102 sm:h-90 sm:flex-row"
     >
-      <div className="flex h-full w-1/2 flex-col justify-between p-10">
+      <div className="flex w-full flex-col justify-between gap-6 p-6 sm:w-1/2 sm:p-10">
         <div className="space-y-5">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
@@ -46,13 +46,13 @@ export default function ProjectCard({ title, description, tags, year, isActive, 
           )}
         </span>
       </div>
-      <div className="relative h-full w-1/2">
+      <div className="relative h-56 w-full sm:h-full sm:w-1/2">
         <Image
           src={cover}
           alt={`${title} cover`}
           fill
           sizes="360px"
-          className="h-full w-full object-contain"
+          className="h-full w-full object-cover object-[center_-20px] sm:object-contain sm:object-center"
           priority
           unoptimized
         />
