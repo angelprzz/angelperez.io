@@ -147,7 +147,7 @@ export default function Home() {
               href="https://www.figma.com/design/v2gYW1YtS4525qJr2aB18W/angelperez.io?node-id=170-275&t=8d5Nm3iTTlOTghnr-1"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-3"
+              className="hover:text-foreground underline underline-offset-3 transition-colors"
             >
               Designed
             </a>{" "}
@@ -156,7 +156,7 @@ export default function Home() {
               href="https://github.com/angelprzz/angelperez.io"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-3"
+              className="hover:text-foreground underline underline-offset-3 transition-colors"
             >
               coded
             </a>{" "}
