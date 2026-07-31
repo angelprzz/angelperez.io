@@ -27,9 +27,9 @@ export default function Home() {
             <h1 className="font-display text-2xl leading-snug font-extrabold md:text-[40px] md:leading-15">
               Hey, I&apos;m Ángel :)
             </h1>
-            <h1 className="font-display text-secondary text-2xl leading-snug font-semibold md:-mt-2 md:text-[40px] md:leading-15">
+            <p className="font-display text-secondary text-2xl leading-snug font-semibold md:-mt-2 md:text-[40px] md:leading-15">
               Software Engineer, Designer, Human
-            </h1>
+            </p>
           </div>
 
           <div className="mt-4 flex flex-col gap-5 md:flex-row">
