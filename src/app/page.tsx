@@ -80,7 +80,7 @@ export default function Home() {
         <section className="space-y-4">
           <div className="space-y-2">
             <h2 className="font-display text-foreground text-4xl font-extrabold">Location</h2>
-            <p className="text-muted font-sans text-base font-medium">Open to relocate anywhere on planet Earth</p>
+            <p className="text-muted font-sans text-base font-medium">Open to relocate anywhere on planet Earth 🌎</p>
           </div>
           <div className="flex gap-5">
             <Map
