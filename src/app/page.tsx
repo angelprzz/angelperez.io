@@ -44,7 +44,7 @@ export default function Home() {
               <p>
                 If you&apos;re a founder or startup seeking innovative product development, let&apos;s talk.{" "}
                 <a
-                  href="mailto:angelpxrz@gmail.com"
+                  href="mailto:hello@angelperez.io"
                   className="hover:text-foreground hover:decoration-foreground text-secondary decoration-secondary cursor-pointer italic underline underline-offset-3 transition-colors"
                 >
                   Reach out via email

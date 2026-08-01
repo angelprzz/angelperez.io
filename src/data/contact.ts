@@ -6,9 +6,9 @@ import type { ContactButtonPropsType } from "@/types/contact-button";
 
 export const email: ContactButtonPropsType = {
   icon: FiMail,
-  name: "angelpxrz@gmail.com",
+  name: "hello@angelperez.io",
   rightIcon: FiArrowUpRight,
-  url: "mailto:angelpxrz@gmail.com",
+  url: "mailto:hello@angelperez.io",
 };
 
 export const socials: ContactButtonPropsType[] = [
