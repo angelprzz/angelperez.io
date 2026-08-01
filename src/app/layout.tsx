@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://angelperez.io"),
   title: "Ángel Pérez — Software Engineer • Designer",
   description:
-    "Full-stack design engineer with 7 years of experience building human-centered digital products.",
+    "Full-stack design engineer building human-centered digital products.",
   openGraph: {
     title: "Ángel Pérez — Software Engineer • Designer",
     description:
