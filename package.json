@@ -14,7 +14,10 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
     "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
     "preview": "next build && next start",
-    "clean:images": "rm -rf .next/dev/cache/images .next/cache/images"
+    "clean:images": "rm -rf .next/dev/cache/images .next/cache/images",
+    "cf:build": "opennextjs-cloudflare build",
+    "cf:deploy": "opennextjs-cloudflare deploy",
+    "cf:preview": "opennextjs-cloudflare preview"
   },
   "dependencies": {
     "@dev.icons/react": "^1.1.0",
@@ -26,6 +29,7 @@
     "react-map-gl": "^8.1.2"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.2",
     "@tailwindcss/postcss": "^4",
     "@types/mapbox-gl": "^3.5.0",
     "@types/node": "^20",
@@ -38,7 +42,8 @@
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.65.0",
+    "wrangler": "^4.118.0"
   },
   "ignoreScripts": [
     "sharp",
