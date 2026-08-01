@@ -15,22 +15,22 @@ const bricolageGrotesque = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://angelperez.io"),
-  title: "Ángel Pérez • Software Engineer, Designer, Human",
+  title: "Ángel Pérez — Software Engineer • Designer",
   description:
-    "Full-stack design engineer with 7 years of experience building human-centered digital products across startups and large companies.",
+    "Full-stack design engineer with 7 years of experience building human-centered digital products.",
   openGraph: {
-    title: "Ángel Pérez • Software Engineer, Designer, Human",
+    title: "Ángel Pérez — Software Engineer • Designer",
     description:
-      "Full-stack design engineer with 7 years of experience building human-centered digital products across startups and large companies.",
+      "Full-stack design engineer building human-centered digital products.",
     url: "https://angelperez.io",
     siteName: "Ángel Pérez",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Ángel Pérez • Software Engineer, Designer, Human",
+    title: "Ángel Pérez — Software Engineer • Designer",
     description:
-      "Full-stack design engineer with 7 years of experience building human-centered digital products across startups and large companies.",
+      "Full-stack design engineer building human-centered digital products.",
   },
 };
 
