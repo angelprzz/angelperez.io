@@ -58,7 +58,7 @@ export default function Home() {
               alt="polaroid"
               width={612}
               height={720}
-              className="h-48 w-auto shrink-0 self-center md:h-53.5 md:self-start"
+              className="hidden h-53.5 w-auto shrink-0 self-start md:block"
               priority
               unoptimized
             />
