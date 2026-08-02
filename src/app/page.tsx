@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContactButton from "@/components/contact/contact-button";
 import FloatingHeader from "@/components/header/floating-header";
 import HeaderActions from "@/components/header/header-actions";
@@ -52,7 +53,15 @@ export default function Home() {
                 .
               </p>
             </div>
-            <div className="bg-card h-56 w-full shrink-0 md:h-53.5 md:w-45" />
+            <Image
+              src="/hero/polaroid.png"
+              alt="polaroid"
+              width={0}
+              height={0}
+              className="h-48 w-auto shrink-0 self-center md:h-53.5 md:self-start"
+              priority
+              unoptimized
+            />
           </div>
         </section>
 
