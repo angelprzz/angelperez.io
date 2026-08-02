@@ -1,6 +1,6 @@
 import { GithubIcon } from "@dev.icons/react/mono";
 import { FaLinkedin } from "react-icons/fa";
-import { FiArrowUpRight, FiFileText, FiMail } from "react-icons/fi";
+import { FiArrowUpRight, FiMail } from "react-icons/fi";
 import { VscTwitter } from "react-icons/vsc";
 import type { ContactButtonPropsType } from "@/types/contact-button";
 
@@ -13,7 +13,6 @@ export const email: ContactButtonPropsType = {
 
 export const socials: ContactButtonPropsType[] = [
   { icon: VscTwitter, name: "AngelTheMaker", url: "https://x.com/AngelTheMaker" },
-  { icon: GithubIcon, name: "angelprzz", url: "https://github.com/angelprzz" },
   {
     icon: FaLinkedin,
     iconStyle: "text-[#0C65C2]",
@@ -22,4 +21,6 @@ export const socials: ContactButtonPropsType[] = [
   },
 ];
 
-export const others: ContactButtonPropsType[] = [{ icon: FiFileText, name: "Download CV", url: "/cv.pdf" }];
+export const code: ContactButtonPropsType[] = [
+  { icon: GithubIcon, name: "angelprzz", url: "https://github.com/angelprzz" },
+];

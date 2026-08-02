@@ -6,7 +6,7 @@ import HeaderLinks from "@/components/header/header-links";
 import Map from "@/components/location/map";
 import ProjectCard from "@/components/projects/project-card";
 import TechPill from "@/components/technologies/tech-pill";
-import { email, others, socials } from "@/data/contact";
+import { code, email, socials } from "@/data/contact";
 import { projects } from "@/data/projects";
 import { technologies } from "@/data/technologies";
 
@@ -140,9 +140,9 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-1">
-              <h3 className="font-display text-base font-medium sm:text-lg">Other</h3>
+              <h3 className="font-display text-base font-medium sm:text-lg">Code</h3>
               <div className="flex flex-wrap gap-4">
-                {others.map((item) => (
+                {code.map((item) => (
                   <ContactButton key={item.name} {...item} />
                 ))}
               </div>
