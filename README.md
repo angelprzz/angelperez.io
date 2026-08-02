@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# angelperez.io
 
-## Getting Started
+My personal site, a portfolio of what I build, the tools I use, and how to reach me.
 
-First, run the development server:
+Live at [angelperez.io](https://angelperez.io).
+
+## Stack
+
+- [Next.js](https://nextjs.org) (App Router) with React 19 and the React Compiler
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS v4](https://tailwindcss.com), themed with CSS custom properties in `src/app/globals.css`
+- [Mapbox GL](https://docs.mapbox.com/mapbox-gl-js) through `react-map-gl` for the location maps
+- Deployed to [Cloudflare Workers](https://workers.cloudflare.com) with [OpenNext](https://opennext.js.org/cloudflare)
+
+## Getting started
+
+Install dependencies and start the dev server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site runs at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The maps need a Mapbox token. Copy the example env file and add yours:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+cp .env.example .env
+```
 
-## Learn More
+```
+NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN="pk.your_token_here"
+```
 
-To learn more about Next.js, take a look at the following resources:
+It's a public token, so it ships in the client bundle. Restrict it by URL in the Mapbox dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command              | What it does                          |
+| -------------------- | ------------------------------------- |
+| `bun dev`            | Dev server                            |
+| `bun run build`      | Production build                      |
+| `bun check`          | ESLint + TypeScript, no emit          |
+| `bun run lint:fix`   | Autofix lint errors                   |
+| `bun run cf:build`   | Build for Cloudflare through OpenNext |
+| `bun run cf:preview` | Preview the Worker locally            |
+| `bun run cf:deploy`  | Deploy to Cloudflare                  |
 
-## Deploy on Vercel
+## Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+  app/          Routes, layout, global styles
+  components/   UI, grouped by section (header, projects, location, …)
+  data/         Site content — projects, technologies, contact links
+  hooks/        Shared React hooks
+  types/        Shared types
+public/         Images and static assets
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Content lives in `src/data`, apart from the components that render it — updating a project or adding a link means editing one object, not the markup.
+
+## License
+
+The source code is [MIT licensed](LICENSE) — read it, learn from it, reuse it.
+
+The content is not: images, copy, and the visual design are © Ángel Pérez, all rights reserved. Third-party logos in the project covers belong to their owners. Please don't republish this site as your own.
