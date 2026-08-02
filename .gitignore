@@ -32,6 +32,10 @@ bun-debug.log*
 # vercel
 .vercel
 
+# cloudflare
+/.open-next/
+.wrangler
+
 # typescript
 *.tsbuildinfo
 
