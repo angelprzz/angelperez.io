@@ -54,10 +54,10 @@ export default function Home() {
               </p>
             </div>
             <Image
-              src="/hero/polaroid.png"
+              src="/hero/polaroid.webp"
               alt="polaroid"
-              width={0}
-              height={0}
+              width={608}
+              height={720}
               className="h-48 w-auto shrink-0 self-center md:h-53.5 md:self-start"
               priority
               unoptimized
