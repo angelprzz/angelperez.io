@@ -58,7 +58,7 @@ export default function Home() {
               alt="polaroid"
               width={612}
               height={720}
-              className="hidden h-53.5 w-auto shrink-0 self-start md:block"
+              className="hidden h-53.5 w-auto shrink-0 self-start grayscale transition-[filter] duration-225 hover:grayscale-0 md:block"
               priority
               unoptimized
             />
