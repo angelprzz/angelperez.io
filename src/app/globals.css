@@ -13,7 +13,7 @@
 
   /* Surfaces */
   --card: #f7f7f7;
-  --border: #e5e5e5;
+  --border: color-mix(in srgb, var(--foreground) 5%, transparent);
 
   /* Status */
   --success: #22c55e;
@@ -31,7 +31,6 @@
   --muted: #8a8a8a;
 
   --card: #1a1a1a;
-  --border: #2e2e2e;
 
   --success: #4ade80;
   --danger: #f87171;
