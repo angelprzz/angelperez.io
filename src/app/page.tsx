@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactButton from "@/components/contact/contact-button";
+import ConfettiHeart from "@/components/footer/confetti-heart";
 import FloatingHeader from "@/components/header/floating-header";
 import HeaderActions from "@/components/header/header-actions";
 import HeaderLinks from "@/components/header/header-links";
@@ -155,7 +156,7 @@ export default function Home() {
         <div className="bg-card h-px w-full" />
         <div className="my-8 flex flex-col items-center gap-2">
           <p className="text-center font-sans text-sm font-normal sm:text-base">
-            © 2026 Ángel Pérez • Handcrafted with ❤️️
+            © 2026 Ángel Pérez • Handcrafted with <ConfettiHeart />
           </p>
           <p className="text-muted text-center font-sans text-[10px] font-light sm:text-xs">
             <a
