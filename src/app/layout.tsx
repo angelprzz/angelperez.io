@@ -22,11 +22,13 @@ export const metadata: Metadata = {
     url: "https://angelperez.io",
     siteName: "Ángel Pérez",
     type: "website",
+    images: [{ url: "/metadata/og-image.webp", width: 1200, height: 630 }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Ángel Pérez — Software Engineer • Designer",
     description: "Full-stack design engineer building human-centered digital products.",
+    images: ["/metadata/twitter-image.webp"],
   },
 };
 
