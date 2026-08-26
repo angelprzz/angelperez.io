@@ -47,7 +47,7 @@ export default function Home() {
                 If you&apos;re a founder or startup seeking innovative product development, let&apos;s talk.{" "}
                 <a
                   href="mailto:hello@angelperez.io"
-                  className="hover:text-foreground hover:decoration-foreground text-secondary decoration-secondary cursor-pointer italic underline underline-offset-3 transition-colors"
+                  className="text-link cursor-pointer font-medium underline-offset-3 hover:underline"
                 >
                   Reach out via email
                 </a>

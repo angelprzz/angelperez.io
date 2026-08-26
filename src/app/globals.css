@@ -21,6 +21,7 @@
 
   /* Interaction */
   --selection: #b6c1cf;
+  --link: #2b7fff;
 }
 
 .dark {
@@ -47,6 +48,7 @@
   --color-border: var(--border);
   --color-success: var(--success);
   --color-danger: var(--danger);
+  --color-link: var(--link);
   --font-sans: var(--font-inter);
   --font-display: var(--font-bricolage-grotesque);
 }
