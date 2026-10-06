@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     icon: "/metadata/icon.svg",
   },
   openGraph: {
-    title: "Ángel Pérez - Software Engineer • Designer",
+    title: "Ángel Pérez - Product Engineer • Designer",
     description: "Full-stack design engineer building human-centered digital products.",
     url: "https://angelperez.io",
     siteName: "Ángel Pérez",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ángel Pérez - Software Engineer • Designer",
+    title: "Ángel Pérez - Product Engineer • Designer",
     description: "Full-stack design engineer building human-centered digital products.",
     images: ["/metadata/twitter-image.webp"],
   },

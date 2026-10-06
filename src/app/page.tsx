@@ -30,7 +30,7 @@ export default function Home() {
               Hey, I&apos;m Ángel :)
             </h1>
             <p className="font-display text-secondary text-2xl leading-snug font-semibold md:-mt-2 md:text-[40px] md:leading-15">
-              Software Engineer, Designer, Human
+              Product Engineer, Designer, Human
             </p>
           </div>
 
@@ -38,18 +38,20 @@ export default function Home() {
             <div className="space-y-4 font-sans text-sm md:text-base">
               <p>I love building digital products.</p>
               <p>
-                I&apos;m a full-stack design engineer with 7 years of experience working across small startups and large
-                companies.
+                I&apos;m a product engineer with 7+ years of experience, mostly at early-stage startups, where I&apos;ve
+                often worked as the founding engineer, taking products from idea to launch.
               </p>
-              <p>My goal is to build human-centered products that help people connect, communicate and live better.</p>
-              <p>Outside of work I enjoy music, cinema and philosophy.</p>
               <p>
-                If you&apos;re a founder or startup seeking innovative product development, let&apos;s talk.{" "}
+                I care about building human-centered products that help people connect, communicate and live better.
+              </p>
+              <p>Outside of work, I&apos;m into music, cinema and philosophy.</p>
+              <p>
+                If you&apos;re a founder looking for someone to help bring your product to life,{" "}
                 <a
                   href="mailto:hello@angelperez.io"
                   className="text-link cursor-pointer font-medium underline-offset-3 hover:underline"
                 >
-                  Reach out via email
+                  reach out via email
                 </a>
                 .
               </p>
