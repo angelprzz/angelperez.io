@@ -11,6 +11,8 @@ export const email: ContactButtonPropsType = {
   url: "mailto:hello@angelperez.io",
 };
 
+export const calUrl = "https://cal.com/angelperez/30min";
+
 export const socials: ContactButtonPropsType[] = [
   { icon: VscTwitter, name: "AngelTheMaker", url: "https://x.com/AngelTheMaker" },
   {

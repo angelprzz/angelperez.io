@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LuMail } from "react-icons/lu";
 import ContactButton from "@/components/contact/contact-button";
 import ConfettiHeart from "@/components/footer/confetti-heart";
 import FloatingHeader from "@/components/header/floating-header";
@@ -7,7 +8,7 @@ import HeaderLinks from "@/components/header/header-links";
 import Map from "@/components/location/map";
 import ProjectCard from "@/components/projects/project-card";
 import TechPill from "@/components/technologies/tech-pill";
-import { code, email, socials } from "@/data/contact";
+import { calUrl, code, email, socials } from "@/data/contact";
 import { projects } from "@/data/projects";
 import { technologies } from "@/data/technologies";
 
@@ -38,30 +39,52 @@ export default function Home() {
             <div className="space-y-4 font-sans text-sm md:text-base">
               <p>I love building digital products.</p>
               <p>
-                I&apos;m a product engineer with 7+ years of experience, mostly at early-stage startups, where I&apos;ve
-                often worked as the founding engineer, taking products from idea to launch.
+                I&apos;m a product engineer with 7+ years of experience taking products from idea to launch, often as
+                the founding engineer at early-stage startups.
               </p>
-              <p>
-                I care about building human-centered products that help people connect, communicate and live better.
-              </p>
-              <p>Outside of work, I&apos;m into music, cinema and philosophy.</p>
-              <p>
-                If you&apos;re a founder looking for someone to help bring your product to life,{" "}
+              <p>I care about making human-centered products that help people connect, communicate and live better.</p>
+              <p>When I&apos;m not working, I&apos;m into music, cinema and philosophy.</p>
+              <p>Founder with an idea? Let&apos;s talk.</p>
+              <div className="flex flex-wrap gap-3">
                 <a
-                  href="mailto:hello@angelperez.io"
-                  className="text-link cursor-pointer font-medium underline-offset-3 hover:underline"
+                  href={calUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex cursor-pointer items-center gap-1.5 rounded-md border border-neutral-800 bg-neutral-800 px-3 py-1.5 text-white transition-colors duration-200 hover:bg-neutral-700 dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-300"
                 >
-                  reach out via email
+                  <Image
+                    src="/icons/cal-com-light.svg"
+                    alt=""
+                    width={14}
+                    height={14}
+                    className="size-[0.875em] rounded-[3px] dark:hidden"
+                    unoptimized
+                  />
+                  <Image
+                    src="/icons/cal-com.svg"
+                    alt=""
+                    width={14}
+                    height={14}
+                    className="hidden size-[0.875em] rounded-[3px] dark:block"
+                    unoptimized
+                  />
+                  Book a call
                 </a>
-                .
-              </p>
+                <a
+                  href={email.url}
+                  className="border-border bg-card text-foreground hover:bg-foreground/8 inline-flex cursor-pointer items-center gap-1.5 rounded-md border px-3 py-1.5 transition-colors duration-200"
+                >
+                  <LuMail className="text-secondary size-[0.875em]" aria-hidden />
+                  Send an email
+                </a>
+              </div>
             </div>
             <Image
               src="/hero/polaroid.webp"
               alt="polaroid"
               width={612}
               height={720}
-              className="hidden h-53.5 w-auto shrink-0 self-start grayscale transition-[filter] duration-225 hover:grayscale-0 md:block dark:drop-shadow-[0_0_40px_rgba(255,255,255,0.28)] dark:hover:drop-shadow-[0_0_40px_rgba(253,230,138,0.42)]"
+              className="hidden h-53.5 w-auto shrink-0 self-start md:block dark:drop-shadow-[0_0_40px_rgba(255,255,255,0.28)]"
               priority
               unoptimized
             />
