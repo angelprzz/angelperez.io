@@ -29,6 +29,13 @@ jobs:
         with:
           bun-version: 1.3.14
 
+      # next build runs on Node, not Bun. Pin it so the runner image's
+      # default can't fall behind a security release (24.22.1 = Oct 2026 fixes).
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24.22.1
+
       - name: Cache Bun install cache
         uses: actions/cache@v4
         with:
